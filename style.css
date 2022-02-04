@@ -66,7 +66,7 @@ nav .openMenu{
    display: none;
    cursor: pointer;
 }
-nav .mainMenu .closeMenu, .icons i{
+nav .mainMenu .closeMenu, .icons{
    font-size: 1.7rem;
    display: none;
    cursor: pointer;
@@ -107,7 +107,7 @@ nav .logo{
        color: #64ffda;;
    }
 
-   .icons i{
+   .icons{
        display: inline-block;
        padding: 12px;
    }
@@ -181,21 +181,27 @@ nav .logo{
 }
 
 .links{
-    font-size: 1.5rem;
+    /* font-size: 1.5rem; */
 }
 
 .links a{
     color: #a8b2d1;
+    font-size: 1.5rem;
+    margin-bottom: 10%;
 }
 
-.links a:hover{
+.links a svg{
+    width: 27px;
+    height: 27px;
+}
+
+.links a:hover .links a{
     color: #64ffda;
-    margin-bottom: 2px;
+    margin-bottom: 13%;
+    transition: 0.3s ease;
     /* border: 1px solid red; */
 }
-.links i{
-    margin-bottom: 13%;
-}
+
 .ver-line{
     width: 1px;
     height: 16vh;
@@ -238,7 +244,7 @@ nav .logo{
     }
 
     .home{
-        padding-top: 20%;
+        padding-top: 40%;
         width: 85%;
     }
     .my-name{
@@ -350,6 +356,7 @@ nav .logo{
 .projects{
     /* border: 1px solid red; */
     height: auto;
+    width: 75%;
 }
 
 .projects .projects-grid-container{
@@ -362,7 +369,7 @@ nav .logo{
 
 .projects .projects-grid-container .projects-list{
     width: 100%;
-    height: 80%;
+    height: 100%;
     /* border: 1px solid red; */
     display: flex;
     margin-bottom: 20%;
@@ -408,13 +415,14 @@ nav .logo{
     left: -30%;
     top: 10%;
     z-index: 10;
+    margin-top: 8%;
 }
 
 .project-tech-lists{
     list-style: none;
     width: 70%;
     margin: auto;
-    margin-top: 15%;
+    margin-top: 10%;
     /* border: 1px solid blue; */
     display: flex;
     justify-content: space-between;
@@ -442,8 +450,8 @@ nav .logo{
 }
 
 .project-image img{
-    height: 100%;
-    width: 100%;
+    height: 400px;
+    width: 120%;
     opacity: 0.3;
   display: block;
   width: 100%;
@@ -470,6 +478,10 @@ nav .logo{
     opacity: 0;
 }
 
+.project-image:hover img{
+    opacity: 0.9;
+}
+
 @media (max-width: 800px) {
     .projects{
         width: 90%;
@@ -478,6 +490,7 @@ nav .logo{
         /* border: red 1px solid; */
         
     }
+
     .one .project-content .project-overline{
         text-align: left;
     }
@@ -509,6 +522,26 @@ nav .logo{
     }
 }
 
+.project-links{
+    height: 40px;
+    /* border: 1px solid red; */
+    margin-top: 10%;
+    color: #8f9ab8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-links a{
+    font-size: 1.6rem;
+    color: #8f9ab8;
+    margin: 0 30px;
+}
+
+.project-links a svg{
+    width: 25px;
+    height: 25px;
+}
 
 /***************************
 /******contact me*************
@@ -560,6 +593,7 @@ nav .logo{
     font-size: 1.1rem;
     padding-top: 2%;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .hello-btn:hover{
@@ -567,15 +601,16 @@ nav .logo{
     transition: 0.4s ease-in-out;
 }
 
-.contact-me .email{
+.contact-me .contact-info{
+    width: 60%;
+    margin: auto;
     margin-top: 5%;
-    text-align: center;
-}
-.contact-me .telegram{
-    text-align: center;
-    margin-top: 3%;
+    /* background-color: red; */
 }
 
+.contact-me .contact-info p{
+    margin-top: 3%;
+}
 .contact-me a{
     font-family: Monospace;
     font-size: 0.9rem;
@@ -584,3 +619,17 @@ nav .logo{
     /* writing-mode: vertical-rl; */
     text-decoration: none;
 }
+
+@media (max-width: 800px) {
+    .contact-me{
+        width: 100%;
+        /* border: 1px solid red; */
+        
+    }
+    .hello-btn{
+        width: 30%;
+        margin-top: 7%;
+        padding-top: 3%;
+    }
+}
+
