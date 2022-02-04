@@ -76,6 +76,16 @@ nav .logo{
    margin: 6px;
    font-size: 25px;
    cursor: pointer;
+   /* border: 1px solid rebeccapurple; */
+}
+
+.logo h1{
+    color: #37dbc0;
+    margin-left: 50px;
+}
+
+.logo a{
+    text-decoration: none;
 }
 
 @media (max-width: 800px) {
@@ -131,7 +141,12 @@ nav .logo{
 .home{
     width: 70%;
     margin: auto;
-    padding-top: 8%;
+    padding-top: 11%;
+    /* border: 1px solid rebeccapurple; */
+}
+
+.space{
+    /* border: 1px solid red; */
 }
 
 .my-name{
@@ -188,17 +203,19 @@ nav .logo{
     color: #a8b2d1;
     font-size: 1.5rem;
     margin-bottom: 10%;
+    transition: 0.3s ease-in-out;
 }
 
 .links a svg{
-    width: 27px;
-    height: 27px;
+    width: 20px;
+    height: 20px;
+    
 }
 
-.links a:hover .links a{
+.links a:hover{
     color: #64ffda;
     margin-bottom: 13%;
-    transition: 0.3s ease;
+    transition: 0.3s ease-in-out;
     /* border: 1px solid red; */
 }
 
@@ -226,6 +243,7 @@ nav .logo{
     color: #a8b2d1;
     margin-bottom: 20px;
     writing-mode: vertical-rl;
+    letter-spacing: 2px;
     text-decoration: none;
 }
 
@@ -273,7 +291,7 @@ nav .logo{
 /***************************/
 
 .space{
-    height: 30vh;
+    height: 20vh;
 }
 
 .about, .projects, .contact-me{
@@ -353,10 +371,15 @@ nav .logo{
 /***************************
 /***************************/
 
+#projects{
+    height: 40vh;
+}
+
 .projects{
     /* border: 1px solid red; */
     height: auto;
     width: 75%;
+    margin-bottom: -20%;
 }
 
 .projects .projects-grid-container{
@@ -383,6 +406,9 @@ nav .logo{
     z-index: 9;
 }
 
+.project-content a{
+    text-decoration: none;
+}
 .one .project-content{
     margin-left: auto;
 }
@@ -410,12 +436,13 @@ nav .logo{
     background-color: #112240;
     border-radius: 4px;
     padding: 20px;
-    text-align: right;
+    text-align: left;
     position: relative;
     left: -30%;
     top: 10%;
     z-index: 10;
     margin-top: 8%;
+
 }
 
 .project-tech-lists{
@@ -542,6 +569,8 @@ nav .logo{
     width: 25px;
     height: 25px;
 }
+
+
 
 /***************************
 /******contact me*************
