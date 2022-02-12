@@ -118,8 +118,22 @@ nav .logo{
    }
 
    .icons{
-       display: inline-block;
-       padding: 12px;
+       margin-top: 10%;
+       width: 100%;
+       display: flex;
+        /* border: 1px solid red; */
+       /* padding: 12px; */
+   }
+   .icons div{
+       margin: auto;
+       width: 50%;
+       /* border: 1px solid red; */
+       display: flex;
+       justify-content: space-between;
+   }
+   .icons div a:hover{
+       color: #37dbc0
+       /* margin: 0 10%; */
    }
 }
 
@@ -143,6 +157,13 @@ nav .logo{
     margin: auto;
     padding-top: 10%;
     /* border: 1px solid rebeccapurple; */
+}
+
+@media (max-width: 800px) {
+    .home{
+
+        padding-top: 0%;
+    }
 }
 
 .space{
@@ -262,7 +283,7 @@ nav .logo{
     }
 
     .home{
-        padding-top: 40%;
+        padding-top: 30%;
         width: 85%;
     }
     .my-name{
@@ -370,9 +391,27 @@ nav .logo{
 /******Projects*************
 /***************************
 /***************************/
-
+/* 
 #projects{
-    height: 40vh;
+    height: 50vh;
+} */
+
+@media (min-width: 1000px) {
+    #projects{
+        height: 40vh;
+    }
+}
+
+@media (max-width: 550px) {
+    #projects{
+        height: 30vh;
+    }
+}
+
+@media (max-width: 515px) {
+    #projects{
+        height: 70vh;
+    }
 }
 
 .projects{
@@ -631,9 +670,10 @@ nav .logo{
 }
 
 .contact-me .contact-info{
-    width: 60%;
+    width: 80%;
     margin: auto;
     margin-top: 5%;
+    text-align: center;
     /* background-color: red; */
 }
 
@@ -659,6 +699,10 @@ nav .logo{
         width: 30%;
         margin-top: 7%;
         padding-top: 3%;
+    }
+    .contact-info{
+        /* border: 1px solid red; */
+        /* width: 160px; */
     }
 }
 
